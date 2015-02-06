@@ -1,0 +1,20 @@
+Networking Assignments
+
+Directions: 
+Java files are found in the source (src) folder. 
+Assigments are divided into packages: A0 (Assignment 0), Assignment 1 (A1), etc
+
+Assignment 0 Running Instructions:
+TCP Echo and TCP DateTime:
+	Open 2 command prompts: 
+		1. Run the Server first: Choose TCPEchoServer.java or TCPDateServer.java
+		2. Run the Client second: Choose TCPEchoClient. It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
+UDP Echo and UDP DateTime:
+	Open 2 command prompts:
+			1. Run the Server first: Choose UDPEchoServer.java or UDPDateServer.java
+			2. Run the Client second: Choose UDPEchoClient. It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
+
+Assignment 1:
+Run: GetWebPage.java
+	Opens a GUI, insert the webpage you want to view for example (https://google.com)
+	It'll display the website also hyperlinks within the website work as they should.
