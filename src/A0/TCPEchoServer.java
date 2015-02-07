@@ -21,7 +21,7 @@ import java.util.Scanner;
  */
 public class TCPEchoServer {
 	private static ServerSocket servSocket;
-	private static final int PORT = 1234;
+	private static final int PORT = 1600;
 	
 	public static void main(String[] args) {
 		System.out.println("Opening port");

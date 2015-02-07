@@ -12,12 +12,26 @@ Assignment 0 Running Instructions:
 TCP Echo and TCP DateTime:
 	Open 2 command prompts: 
 		1. Run the Server first: Choose TCPEchoServer.java or TCPDateServer.java
-		2. Run the Client second: Choose TCPEchoClient. It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
+		2. Open the Client second: Choose TCPEchoClient. Change the port number to: 
+			/**
+	 			* PORTS FOR TESTING Change PORT number to:
+	 			* 1600 for ECHO
+	 			* 1601 for Date
+	 			* 1602 for CHARGEN
+	 		*/ 
+		3. Run TCPEchoClient. It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
 
 UDP Echo and UDP DateTime:
 	Open 2 command prompts:
-			1. Run the Server first: Choose UDPEchoServer.java or UDPDateServer.java
-			2. Run the Client second: Choose UDPEchoClient. It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
+		1. Run the Server first: Choose UDPEchoServer.java or UDPDateServer.java
+		2. Open the Client second: Choose UDPEchoClient. Change the port number to:
+			/**
+				* PORTS FOR TESTING Change PORT number to:
+				 * 1500 for ECHO
+				 * 1501 for Date
+				 * 1502 for CHARGEN
+ 			*/
+		3. Run UDPEchoClient It'll ask you to input a message and then it returns the echo response (input if echoserver, date if dateserver)
 
 
 Assignment 1:

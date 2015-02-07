@@ -23,7 +23,7 @@ import java.util.Date;
  *
  */
 public class UDPDateServer {
-	private static final int PORT = 1234;
+	private static final int PORT = 1501;
 	private static DatagramSocket datagramSocket;
 	private static DatagramPacket inPacket, outPacket;
 	private static byte[] buffer;

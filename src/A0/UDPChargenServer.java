@@ -27,7 +27,7 @@ import java.util.Random;
  *
  */
 public class UDPChargenServer {
-	private static final int PORT = 1234;
+	private static final int PORT = 1503;
 	private static DatagramSocket datagramSocket;
 	private static DatagramPacket inPacket, outPacket;
 	private static byte[] buffer;
@@ -47,7 +47,8 @@ public class UDPChargenServer {
 	
 	private static void handleClient() {
 		try {
-			String messageIn, messageOut;
+			String messageIn;
+			String messageOut;
 			int numMessages = 0;
 			
 			do {
@@ -68,8 +69,7 @@ public class UDPChargenServer {
 				
 				//picks random value from 0->512
 				Random random = new Random();
-				int returnValue = random.nextInt(MAX_RETURN_VALUE);
-				messageOut = "Server UDPChargen> "+returnValue;
+				messageOut = "Server> UDPChargen: "+Character.toString((char) random.nextInt(MAX_RETURN_VALUE)); 
 				//7: Create the response datagram
 				outPacket = new DatagramPacket(messageOut.getBytes(), messageOut.length(), clientAddress, clientPort);
 				//8: Send the response datagram

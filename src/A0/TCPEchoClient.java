@@ -20,7 +20,13 @@ import java.util.Scanner;
 
 public class TCPEchoClient {
 	private static InetAddress host;
-	private static final int PORT = 1234;
+	/**
+	 * PORTS FOR TESTING Change PORT number to:
+	 * 1600 for ECHO
+	 * 1601 for Date
+	 * 1602 for CHARGEN
+	 */
+	private static final int PORT = 1600;
 	
 	public static void main(String[] args) {
 		try {

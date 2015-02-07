@@ -26,7 +26,7 @@ import java.util.Scanner;
  */
 public class TCPChargenServer {
 	private static ServerSocket servSocket;
-	private static final int PORT = 1234;
+	private static final int PORT = 1602;
 	private static final int MAX_ASCII_VALUE = 255;
 	
 	public static void main(String[] args) {

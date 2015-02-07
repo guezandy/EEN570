@@ -22,7 +22,13 @@ import java.util.Scanner;
  */
 public class UDPEchoClient {
 	private static InetAddress host;
-	private static final int PORT = 1234;
+	/**
+	 * PORTS FOR TESTING Change PORT number to:
+	 * 1500 for ECHO
+	 * 1501 for Date
+	 * 1502 for CHARGEN
+	 */
+	private static final int PORT = 1503;
 	private static DatagramSocket datagramSocket;
 	private static DatagramPacket inPacket, outPacket;
 	private static byte[] buffer;
@@ -61,7 +67,7 @@ public class UDPEchoClient {
 					datagramSocket.receive(inPacket);
 					//7: Retrieve the data from the buffer
 					response = new String(inPacket.getData(), 0, inPacket.getLength());
-					System.out.println("\nServer: "+response);
+					System.out.println("\nResponse: "+response);
 				} 
 			} while(!message.equals("CLOSE"));
 		} catch (IOException e) {

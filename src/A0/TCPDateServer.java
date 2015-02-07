@@ -22,7 +22,7 @@ import java.util.Scanner;
  */
 public class TCPDateServer {
 	private static ServerSocket servSocket;
-	private static final int PORT = 1234;
+	private static final int PORT = 1601;
 	
 	public static void main(String[] args) {
 		System.out.println("Opening port");
