@@ -22,7 +22,7 @@ import javax.swing.event.HyperlinkListener;
  * Java offers the ability to render HTML pages as a browser would do. 
  * The class to hold webpage in java is JEditorPane, this class renders HTML formated text for any webpage downloaded using the setPage() method.
  * How to handle hyperlinks:
- * 		If hyperlinks are contained within a downloaded page a HyperlinkEvent is generate when the user clicks on one of these and must be handled by a HyperlinkListener.
+ * 		If hyperlink are contained within a downloaded page a HyperlinkEvent is generate when the user clicks on one of these and must be handled by a HyperlinkListener.
  *     The hyperlink event were concerned with is ACTIVATED that occurs when a user clicks a hyperlink
  */
 
@@ -66,6 +66,8 @@ public class GetWebPage extends JFrame implements ActionListener {
 	}
 	
 	public void actionPerformed(ActionEvent event) {
+		System.out.println("Size: "+sourceName.getText().toString().length());
+		System.out.println(sourceName.getText());
 		showPage(sourceName.getText());
 	}
 	
@@ -80,6 +82,7 @@ public class GetWebPage extends JFrame implements ActionListener {
 	//grabs the url and called method: JEditorPane.showPage(URL);
 	private void showPage(String location) {
 		try {
+			System.out.println("Location: "+location);
 			contents.setPage(location);
 			sourceName.setText(location);
 		} catch(IOException e) {
