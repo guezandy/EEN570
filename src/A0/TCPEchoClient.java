@@ -26,7 +26,7 @@ public class TCPEchoClient {
 	 * 1601 for Date
 	 * 1602 for CHARGEN
 	 */
-	private static final int PORT = 1600;
+	private static final int PORT = 1602;
 	
 	public static void main(String[] args) {
 		try {
