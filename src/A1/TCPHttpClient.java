@@ -34,9 +34,6 @@ public class TCPHttpClient {
 			System.out.println("Enter host: ");
 			String inputHost  = userEntry.nextLine();
 //a. Connect to the site provided by the user
-			//link = new Socket(inputHost, PORT);
-			
-			String testHost = "www.miami.edu";
 			link = new Socket(inputHost, PORT);///testing
 
 			//Initialize interface to send message to the host
@@ -84,10 +81,6 @@ public class TCPHttpClient {
 			}
 		} catch (IOException e) { 
 			e.printStackTrace();
-		}
-		
-		finally {
-
 		}
 	}
 }

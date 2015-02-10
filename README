@@ -36,6 +36,14 @@ UDP Echo and UDP DateTime:
 
 Assignment 1:
 
+Run: TCPHttpClient.java
+	It will ask you to insert the host:
+		Type any url for example:
+			www.miami.edu
+			www.facebook.com
+
+	It will display the response message
+
 Run: GetWebPage.java
 	Opens a GUI, insert the webpage you want to view for example (https://google.com)
 	It'll display the website also hyperlinks within the website work as they should.
